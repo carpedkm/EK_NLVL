@@ -32,17 +32,15 @@ conda activate tg
 
 # Evaluate QAS model trained from ActivityNet Captions Dataset
 CUDA_VISIBLE_DEVICES=0 python -m src.experiment.eval \
-                     --config pretrained_models/anet_LGI/config.yml \
-                     --checkpoint pretrained_models/anet_LGI/model.pkl \
-                     --method tgn_lgi \
+                     --config [ANET CONFIG PATH] \
+                     --checkpoint [ANET CHECKPOINT PATH] \
                      --dataset anet \
                      --ann_path <annotation> \
                      --exp_info <exp information>
 # Evaluate QAS model trained from Charades-STA Dataset
 CUDA_VISIBLE_DEVICES=0 python -m src.experiment.eval \
-                     --config pretrained_models/charades_LGI/config.yml \
-                     --checkpoint pretrained_models/charades_LGI/model.pkl \
-                     --method tgn_lgi \
+                     --config [CHARADES CONFIG PATH] \
+                     --checkpoint [CHARADES CHECKPOINT PATH] \
                      --dataset charades \
                      --ann_path <annotation> \
                      --exp_info <exp information>
