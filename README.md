@@ -38,7 +38,7 @@ CUDA_VISIBLE_DEVICES=0 python -m src.experiment.eval \
                      --dataset anet \
                      --ann_path <annotation> \
                      --exp_info <exp information>
-# Evaluate VSA model trained from Charades-STA Dataset
+# Evaluate QAS model trained from Charades-STA Dataset
 CUDA_VISIBLE_DEVICES=0 python -m src.experiment.eval \
                      --config pretrained_models/charades_LGI/config.yml \
                      --checkpoint pretrained_models/charades_LGI/model.pkl \
