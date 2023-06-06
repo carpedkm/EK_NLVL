@@ -1,4 +1,4 @@
-EKT-NLVL
+EK-NLVL
 =====
 PyTorch implementation of EK-NLVL QAS model
 
